@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(49, 8, 91);
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator_body{
+    height: 35rem;
+    width: 25rem;
+    overflow: hidden;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    
+}
+
+.display_screen{
+    height: 5rem;
+    width: 20rem;
+    /* border: 3px solid orange; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    scrollbar-width: none;
+    color: white;
+    background-color: black;
+}
+
+.buttons_body{
+    height: 27rem;
+    width: 20rem;
+    /* padding-left: 1rem;
+    padding-right: 1.8rem; */
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns:repeat(4,3rem);
+    grid-template-rows: repeat(7,3rem);
+    gap: 2.3rem;
+    background-color: black;
+}
+    
+
+.buttons{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 5rem;
+    font-size: 2rem;
+    /* outline: none; */
+    box-shadow: -15px 0px 25px 10px rgba(220, 47, 47, 0.3);
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+}
+
+@media (max-width: 430px) {
+    .calculator_body{
+        border: 2px solid green;
+        width: auto;
+        margin: 2%;
+    }
+    .buttons_body{
+        /* border: 2px solid red; */
+        width: auto;
+    }
+    .buttons{
+        height: auto;
+        width: auto;
+    }
+    .display_screen{
+        /* border: 2px solid red; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Very Small Screens */
+@media (max-width: 375px) {
+    .buttons {
+        height: 2.8rem;
+        width: 2.8rem;
+        font-size: 1.3rem;
+    }
+
+    .buttons_body {
+        gap: 1rem;
+    }
+}
