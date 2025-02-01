@@ -8,7 +8,6 @@ html, body{
     height: 100%;
     width: 100%;
     background-color: rgb(49, 8, 91);
-    border: 2px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
